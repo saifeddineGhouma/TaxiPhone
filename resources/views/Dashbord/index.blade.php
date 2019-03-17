@@ -318,20 +318,7 @@
                                                 <td class="datatable-ct"><i class="fa fa-check"></i>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>21</td>
-                                                <td>Jquery Advance</td>
-                                                <td>hasad@uth.com</td>
-                                                <td>+8801962067301</td>
-                                                <td class="datatable-ct"><span class="pie">2,7</span>
-                                                </td>
-                                                <td>15%</td>
-                                                <td>Jun 6, 2013</td>
-                                                <td>$4565656</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
-                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
