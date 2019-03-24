@@ -21,7 +21,8 @@
 						</div>
 						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 							<div class="input-mark-inner mg-b-22">
-								<input type="text" class="form-control"name="name"  placeholder="الإسم">
+								<input type="text" class="form-control"name="name" value="{{old('title')}}"  placeholder="الإسم">
+
 								
 							</div>
 						</div>
@@ -34,7 +35,7 @@
 						</div>
 						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 							<div class="input-mark-inner mg-b-22">
-								<input type="text" class="form-control"name="first_name"placeholder="اللقب">
+								<input type="text" class="form-control"name="first_name" value="{{old('title')}}"  placeholder="اللقب">
 							</div>
 						</div>
 					</div>

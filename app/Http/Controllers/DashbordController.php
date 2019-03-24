@@ -10,6 +10,8 @@ use App\Cmd_Oredoo;
 use App\Client;
 class DashbordController extends Controller
 {
+
+	
     public function passe_commande(Request $request)
     {
        
@@ -19,4 +21,5 @@ class DashbordController extends Controller
     {
     	return view('Dashbord.liste_commande');
     }
+    
 }

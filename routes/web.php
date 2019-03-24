@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Auth::routes();
 
@@ -22,11 +22,7 @@ Route::get('/master',function()
 {
    return view ('layouts.master');
 });
-Route::get('/data-table',function()
-
-{
-	return view('Dashbord.index');
-})->name('dashbord');
+Route::get('/','ClientController@index')->name('dashbord');
 
 Route::get('/add-client',function()
 
@@ -40,3 +36,13 @@ Route::get('/new-commande',function()
 	return view('Dashbord.new-commande');
 });
 Route::get('show-commande/{id}','DashbordController@commandes_client');
+Route::get('/test-form',function(){
+
+	return view ('Dashbord.Fournisseur.index');
+});
+Route::get('create_commande/{id}','CommandeController@GetCommande');
+Route::get('test',function(){
+    	return view ('Dashbord.new-commande');
+}
+
+);
