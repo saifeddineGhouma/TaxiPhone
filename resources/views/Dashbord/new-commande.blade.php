@@ -53,7 +53,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_one_dinar_orange" name="prix_one_dinar_orange" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -84,7 +84,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_orange_sinque_dinar"name="prix_orange_sinque_dinar" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -112,7 +112,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_light_orange"name="prix_light_orange" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -252,7 +252,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_one_dinar_oredoo"name="prix_one_dinar_oredoo" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -274,7 +274,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_sinque_dinar_oredoo"name="prix_sinque_dinar_oredoo" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -295,7 +295,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_light_oredoo"name="prix_light_oredoo" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -377,7 +377,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_one_dinar_tt" name="prix_one_dinar_tt" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -399,7 +399,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_sinque_dinar_tt" name="prix_sinque_dinar_tt"placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 																				</div>
 																			</div>
@@ -420,7 +420,7 @@
 																				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 																				<div class="input-group">
 																					<div class="input-group-addon">$</div>
-																					<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+																					<input type="text" class="form-control" id="prix_light_tt" name="prix_light_tt" placeholder="Amount">
 																					<div class="input-group-addon">.00</div>
 >>>>>>> dev
 																				</div>
@@ -444,17 +444,18 @@
 													</div>
 												</div>
 											</div>
+											
 											<!---------
 												*****Restte de commande *****
 											---------->
-											<div class="form-group-inner">
+											<div class="form-group-inner" id="block_commande" style="display: none">
 												<div class="row">
 													<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 														
 													</div>
 													<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 														<div class="panel panel-default">
-															<div class="panel-heading"id="total">Commande</div>
+															<div class="panel-heading">Commande</div>
 															<div class="panel-body">
 																<div class="form-group-inner">
 																	<div class="row" >
@@ -467,7 +468,7 @@
 																				
 																				<div class="input-group">
 																					<span class="input-group-addon">$</span>
-																					<input type="text" class="form-control" id="inputGroupSuccess4 total" aria-describedby="inputGroupSuccess4Status" name="total">
+																					<input type="text" class="form-control" id="total" aria-describedby="inputGroupSuccess4Status" name="total">
 																				</div>
 																				
 																				
@@ -497,7 +498,7 @@
 																				
 																				<div class="input-group">
 																					<span class="input-group-addon">$</span>
-																					<input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" name="Credi">
+																					<input type="number"step="0.01" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" name="Credi">
 																				</div>
 																				
 																			</div>
@@ -512,24 +513,24 @@
 																			<div class="form-group has-default has-feedback">
 																				
 																				<div class="radio">
-  <label>
-    <input type="radio" name="payee" id="optionsRadios1" value="1" >
-    oui
-  </label>
-</div>
+																					<label>
+																						<input type="radio" name="payee" id="optionsRadios1" value="1" >
+																						oui
+																					</label>
+																				</div>
 																				
 																				
 																			</div>
 																		</div>
-																					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+																		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 																			<div class="form-group has-default has-feedback">
 																				
 																				<div class="radio">
-  <label>
-    <input type="radio" name="payee" id="optionsRadios1" value="0" checked>
-    Non
-  </label>
-</div>
+																					<label>
+																						<input type="radio" name="payee" id="optionsRadios1" value="0" checked>
+																						Non
+																					</label>
+																				</div>
 																				
 																				
 																			</div>
@@ -582,8 +583,13 @@
 														<div class="col-lg-3"></div>
 														<div class="col-lg-9">
 															<div class="login-horizental cancel-wp pull-left form-bc-ele">
+<<<<<<< HEAD
 																<button class="btn btn-white" type="submit">Cancel</button>
 																<button class="btn btn-sm btn-primary login-submit-cs" type="submit">Save Change</button>
+>>>>>>> dev
+=======
+																<button class="btn btn-white" type="button" id="caculer">Calculer</button>
+																<button class="btn btn-sm btn-primary login-submit-cs" type="">Save Change</button>
 >>>>>>> dev
 															</div>
 														</div>

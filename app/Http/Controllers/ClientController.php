@@ -19,7 +19,7 @@ class ClientController extends Controller
     public function index()
     {
     	$clients=Client::all();
-    	dd($clients);
+    	
     	return view ('Dashbord.index')
     	        ->with('clients');
     }
