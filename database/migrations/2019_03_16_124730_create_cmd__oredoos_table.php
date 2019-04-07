@@ -15,13 +15,13 @@ class CreateCmdOredoosTable extends Migration
     {
         Schema::create('cmd__oredoos', function (Blueprint $table) {
             $table->increments('id');
-               $table->string('name_ligte_one_dinar');
-            $table->integer('quentity_one_dinar');
-            $table->decimal('price_cmd_one_dinar', 8, 2);
+               $table->string('name_ligte_one_dinar')->nullable();
+            $table->integer('quentity_one_dinar')->nullable();
+            $table->decimal('price_cmd_one_dinar', 8, 2)->nullable();
 
-            $table->string('name_ligte_five_dinar');
-            $table->integer('quentity_five_dinar');
-            $table->decimal('price_cmd_five_dinar', 8, 2);
+            $table->string('name_ligte_five_dinar')->nullable();
+            $table->integer('quentity_five_dinar')->nullable();
+            $table->decimal('price_cmd_five_dinar', 8, 2)->nullable();
             $table->timestamps();
         });
     }

@@ -46,3 +46,5 @@ Route::get('test',function(){
 }
 
 );
+
+Route::post('passe-commande','CommandeController@PasseCommande')->name('passe.commande');
