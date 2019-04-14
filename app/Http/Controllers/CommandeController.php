@@ -7,6 +7,7 @@ use App\Cmd_Orange;
 use App\Cmd_Oredoo;
 use App\Cmd_Telecome;
 use App\Commande;
+use App\Client;
 class CommandeController extends Controller
 {
     public function GetCommande($id)
@@ -106,5 +107,19 @@ class CommandeController extends Controller
     	 echo "success cmd";
 
 
-    }
+	}
+	
+	public function liste_comande($id)
+	{
+		$commandes=Commande::where('client_id',$id)->get();
+        $client=Client::findorfail($id);
+		return view('Dashbord.liste_commande',compact('client'))
+		        ->with('commandes',$commandes);
+	}
+
+	public function show_commande($id)
+	{
+		$commande=Commande::findorfail($id);
+		return view('Dashbord.show-commande',compact('commande'));
+	}
 }

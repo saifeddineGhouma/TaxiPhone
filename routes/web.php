@@ -46,5 +46,6 @@ Route::get('test',function(){
 }
 
 );
-
+Route::get('dashbord/liste_commande/{id}','CommandeController@liste_comande')->name('liste.commande');
+Route::get('dashbord/show_commande/{id}','CommandeController@show_commande')->name('show.commande');
 Route::post('passe-commande','CommandeController@PasseCommande')->name('passe.commande');

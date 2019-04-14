@@ -62,7 +62,7 @@
                                                 <span class="glyphicon glyphicon-edit"></span></a>
                                                 </button></td>
                                                 <td> <button class="btn btn-info col-md-12">
-                                                <a href="">
+                                                <a href="{{route('liste.commande',$client->id)}}">
                                                 
                                                 <span class="glyphicon glyphicon-eye-open"></span></a>
                                                 </button></td>
