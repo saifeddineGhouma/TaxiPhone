@@ -98,9 +98,9 @@ class CommandeController extends Controller
     	$commande->cmd_orange_id=$orange->id;
     	$commande->cmd_oredoo_id=$oredoo->id;
     	$commande->cmd_telecome_id=$telecome->id;
-    	$commande->client_id=1;
+    	$commande->client_id=$request->client_id;
     	$commande->prix_donnee=$request->avance;
-    	$commande->pricx_recette=$request->Credi;
+    	$commande->pricx_recette=$request->total - $request->avance;
     	$commande->payee=$request->payee;
     	$commande->save();
     	 echo "success cmd";

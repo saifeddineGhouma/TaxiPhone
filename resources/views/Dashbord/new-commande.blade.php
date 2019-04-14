@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+
 <div class="row">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-default color-red">
@@ -18,7 +19,8 @@
 											<div class="form-group-inner has-success">
 												<div class="row">
 													<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-														
+														<input name="client_id"type="hidden" value="{{Request::route('id')
+}}">
 													</div>
 													<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 														<div class="panel panel-success">
@@ -314,22 +316,8 @@
 																				
 																			</div>
 																		</div>
-																		<div class="col-lg-12 col-md-12" style="margin-bottom: 10px"></div>
-																		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																			<label class="login2 pull-left pull-right-pro">Credi</label>
-																		</div>
-																		<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
-																			<div class="form-group has-default has-feedback">
-																				
-																				<div class="input-group">
-																					<span class="input-group-addon">$</span>
-																					<input type="number"step="0.01" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" name="Credi">
-																				</div>
-																				
-																			</div>
-																			
-																			
-																		</div>
+																		
+																	
 																		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 																			<label class="login2 pull-left pull-right-pro">Termine ?</label>
 																		</div>

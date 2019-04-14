@@ -14,13 +14,14 @@ class ClientController extends Controller
 
 	flash('إضافة العميل مع النجاح')->success();
        Client::create($request->all());
-       return redirect()->route('dashbord');
+       $clients=Client::all();
+       return redirect()->route('dashbord',compact('clients'));
     }
     public function index()
     {
     	$clients=Client::all();
     	
     	return view ('Dashbord.index')
-    	        ->with('clients');
+    	        ->with('clients',$clients);
     }
 }

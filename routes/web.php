@@ -40,7 +40,7 @@ Route::get('/test-form',function(){
 
 	return view ('Dashbord.Fournisseur.index');
 });
-Route::get('create_commande/{id}','CommandeController@GetCommande');
+Route::get('create_commande/{id}','CommandeController@GetCommande')->name('create.commande');
 Route::get('test',function(){
     	return view ('Dashbord.new-commande');
 }
