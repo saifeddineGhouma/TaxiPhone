@@ -10,6 +10,10 @@ use App\Cmd_Orange;
 use App\Cmd_Oredoo;
 use App\Cmd_Telecome;
 use App\Commande;
+<<<<<<< HEAD
+>>>>>>> dev
+=======
+use App\Client;
 >>>>>>> dev
 class CommandeController extends Controller
 {
@@ -104,14 +108,32 @@ class CommandeController extends Controller
     	$commande->cmd_orange_id=$orange->id;
     	$commande->cmd_oredoo_id=$oredoo->id;
     	$commande->cmd_telecome_id=$telecome->id;
-    	$commande->client_id=1;
+    	$commande->client_id=$request->client_id;
     	$commande->prix_donnee=$request->avance;
-    	$commande->pricx_recette=$request->Credi;
+    	$commande->pricx_recette=$request->total - $request->avance;
     	$commande->payee=$request->payee;
     	$commande->save();
     	 echo "success cmd";
 
 
+<<<<<<< HEAD
     }
+>>>>>>> dev
+=======
+	}
+	
+	public function liste_comande($id)
+	{
+		$commandes=Commande::where('client_id',$id)->get();
+        $client=Client::findorfail($id);
+		return view('Dashbord.liste_commande',compact('client'))
+		        ->with('commandes',$commandes);
+	}
+
+	public function show_commande($id)
+	{
+		$commande=Commande::findorfail($id);
+		return view('Dashbord.show-commande',compact('commande'));
+	}
 >>>>>>> dev
 }

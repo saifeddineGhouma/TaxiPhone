@@ -40,14 +40,19 @@ Route::get('/test-form',function(){
 
 	return view ('Dashbord.Fournisseur.index');
 });
-Route::get('create_commande/{id}','CommandeController@GetCommande');
+Route::get('create_commande/{id}','CommandeController@GetCommande')->name('create.commande');
 Route::get('test',function(){
     	return view ('Dashbord.new-commande');
 }
 
 );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+=======
+Route::get('dashbord/liste_commande/{id}','CommandeController@liste_comande')->name('liste.commande');
+Route::get('dashbord/show_commande/{id}','CommandeController@show_commande')->name('show.commande');
+>>>>>>> dev
 Route::post('passe-commande','CommandeController@PasseCommande')->name('passe.commande');
 >>>>>>> dev
