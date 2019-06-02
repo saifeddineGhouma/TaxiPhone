@@ -9,95 +9,135 @@
 				</div>
 			</div>
 			<form action="{{route('add_client')}}" method="post">
-				                       {{ csrf_field() }}
-
-			<div class="sparkline12-graph">
-				<div class="input-knob-dial-wrap">
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-							<div class="input-mask-title">
-								<label>Nom</label>
-							</div>
-						</div>
-						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-							<div class="input-mark-inner mg-b-22">
-								<input type="text" class="form-control"name="name" value="{{old('title')}}"  placeholder="الإسم">
-
-								
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-							<div class="input-mask-title">
-								<label>Prenom</label>
-							</div>
-						</div>
-						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-							<div class="input-mark-inner mg-b-22">
-								<input type="text" class="form-control"name="first_name" value="{{old('title')}}"  placeholder="اللقب">
-							</div>
-						</div>
-					</div>
-				
-					
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-							<div class="input-mask-title">
-								<label>Phone</label>
-							</div>
-						</div>
-						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-							<div class="input-mark-inner mg-b-22">
-								<input type="text" class="form-control"name="phone"data-mask="(999) 999-9999" placeholder="هاتف">
-								
-							</div>
-						</div>
-					</div>
-				
-				
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-							<div class="input-mask-title">
-								<label>Adresse</label>
-							</div>
-						</div>
-						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-							<div class="input-mark-inner">
-								<input type="text" class="form-control" name="adresse" data-mask="9999" placeholder="عنوان">
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-							<div class="input-mask-title">
-								<label>Travail</label>
-							</div>
-						</div>
-						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-							<div class="input-mark-inner">
-								<input type="text" class="form-control"name="work" placeholder="العمل">
-							</div>
-						</div>
-					</div>
-
+				{{ csrf_field() }}
+				<div class="sparkline12-graph">
+					<div class="input-knob-dial-wrap">
 						<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-							
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Nom</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								<div class="input-mark-inner mg-b-22">
+									<input type="text" class="form-control"name="name" value="{{old('title')}}"  placeholder="الإسم">
+									
+								</div>
+							</div>
 						</div>
-						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-							<div class="input-mark-inner">
-								<input type="submit" class="form-control btn-success" value="New Client">
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Prenom</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								<div class="input-mark-inner mg-b-22">
+									<input type="text" class="form-control"name="first_name" value="{{old('title')}}"  placeholder="اللقب">
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Phone</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								<div class="input-mark-inner mg-b-22">
+									<input type="text" class="form-control"name="phone"data-mask="(999) 999-9999" placeholder="هاتف">
+									
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Adresse</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								<div class="input-mark-inner">
+									<input type="text" class="form-control" name="adresse" data-mask="9999" placeholder="عنوان">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Travail</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								<div class="input-mark-inner">
+									<input type="text" class="form-control"name="work" placeholder="العمل">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Prix Ticket</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								
+								<label class="sr-only" for="exampleInputAmount">Amount (TND)</label>
+								<div class="input-group">
+									<div class="input-group-addon">TND</div>
+									<input type="text" class="form-control" name="prix_ticket" placeholder="Amount">
+									<div class="input-group-addon">.00</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label> Prix Carte</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								
+								<label class="sr-only" for="exampleInputAmount">Amount (TND)</label>
+								<div class="input-group">
+									<div class="input-group-addon">TND</div>
+									<input type="text" class="form-control" name="prix_carta" placeholder="Amount">
+									<div class="input-group-addon">.00</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="input-mask-title">
+									<label>Light</label>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								
+								<label class="sr-only" for="exampleInputAmount">Amount (TND)</label>
+								<div class="input-group">
+									<div class="input-group-addon">TND</div>
+									<input type="text" class="form-control" name="prix_light" placeholder="Amount">
+									<div class="input-group-addon">.00</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								
+							</div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+								<div class="input-mark-inner">
+									<input type="submit" class="form-control btn-success" value="New Client">
+								</div>
 							</div>
 						</div>
 					</div>
-
-
-				</div>
-
-			</form>
+				</form>
 			</div>
 		</div>
 	</div>

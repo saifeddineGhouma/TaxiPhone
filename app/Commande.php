@@ -8,7 +8,7 @@ class Commande extends Model
 {
       public function Oredoo()
     {
-        return $this->belongsTo('App\Cmd_Oredoo','cmd_orange_id');
+        return $this->belongsTo('App\Cmd_Oredoo','cmd_oredoo_id');
     }
     public function Orange()
     {

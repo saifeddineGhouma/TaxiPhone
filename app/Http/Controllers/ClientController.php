@@ -12,7 +12,7 @@ class ClientController extends Controller
     public function add_client(ClientRequest $request)
     {
 
-	flash('إضافة العميل مع النجاح')->success();
+	flash('client ajouter avec success')->success();
        Client::create($request->all());
        $clients=Client::all();
        return redirect()->route('dashbord',compact('clients'));
@@ -23,5 +23,11 @@ class ClientController extends Controller
     	
     	return view ('Dashbord.index')
     	        ->with('clients',$clients);
+    }
+    public function Delete ($id)
+    { 
+      $client = Client::findOrFail($id);
+    $client->delete();
+      return back();
     }
 }

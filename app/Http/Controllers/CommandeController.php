@@ -13,7 +13,10 @@ class CommandeController extends Controller
     public function GetCommande($id)
 
     {
-    	return view ('Dashbord.new-commande');
+        $client=Client::findorfail($id);
+        
+
+    	return view ('Dashbord.new-commande',compact('client'));
     }
     public function PasseCommande(Request $request)
 
@@ -56,8 +59,8 @@ class CommandeController extends Controller
     	//5dt oredoo
 
     	$oredoo->name_ligte_five_dinar="5 dinar oredoo";
-    	$oredoo->quentity_five_dinar=$request->quentity_five_dinar_orange;
-    	$oredoo->price_cmd_five_dinar=$request->quentity_five_dinar_orange*$request->prix_sinque_dinar_oredoo;
+    	$oredoo->quentity_five_dinar=$request->quentity_five_dinar_oredoo;
+    	$oredoo->price_cmd_five_dinar=$request->quentity_five_dinar_oredoo*$request->prix_sinque_dinar_oredoo;
     	$oredoo->prix_sinque_dinar_oredoo=$request->prix_sinque_dinar_oredoo;
 
     	//light oredoo
@@ -104,7 +107,8 @@ class CommandeController extends Controller
     	$commande->pricx_recette=$request->total - $request->avance;
     	$commande->payee=$request->payee;
     	$commande->save();
-    	 echo "success cmd";
+        flash('commande  ajouter avec success')->success();
+    	 return back();
 
 
 	}
@@ -120,6 +124,21 @@ class CommandeController extends Controller
 	public function show_commande($id)
 	{
 		$commande=Commande::findorfail($id);
+       
 		return view('Dashbord.show-commande',compact('commande'));
 	}
+    public function edit_commande(Request $request,$id)
+
+    {
+        $commande =Commande::findorfail($id);
+
+        $commande->prix_donnee=$request->avance;
+        $commande->payee=$request->payee;
+        $commande->description=$request->description;
+        $commande->save();
+       
+        flash('commande modifier avec success ')->success();
+        return back();
+
+    }
 }
